@@ -33,7 +33,7 @@ c2=$CLEANED_DIR/${sample}_clean_R2.fastq.gz
 fastqc -f fastq -t $THREADS ${r1} -o $QC_DIR/initial
 fastqc -f fastq -t $THREADS ${r2} -o $QC_DIR/initial
 bbduk.sh in=${r1} in2=${r2} out=${c1} out2=${c2} \
-            qtrim=rl trimq=20 mlf=0.33 threads=$THREADS ref= "/home/ug2023/ug523111910118/Biosofts/bbmap/resources/adapters.fa"
+            qtrim=rl trimq=20 mlf=0.33 threads=$THREADS ref="/home/ug2023/ug523111910118/Biosofts/bbmap/resources/adapters.fa"
 fastqc -f fastq -t $THREADS ${c1} -o $QC_DIR/final
 fastqc -f fastq -t $THREADS ${c2} -o $QC_DIR/final
  
