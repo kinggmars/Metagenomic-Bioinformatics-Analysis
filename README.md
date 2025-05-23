@@ -108,4 +108,4 @@ humann --input $CLEANED_DIR/${sample}_clean_cb.fastq.gz --output $HUMANN_DIR --t
 ## Notes  
 - Check intermediate files (e.g., `.sam`, `.bam`, `.fa`) to identify failing steps.  
 - Ensure sufficient storage and memory for large datasets.  
-- Update thread counts (`THREADS`) based on your system.
+- Update thread counts (`THREADS`) based on your system.’
