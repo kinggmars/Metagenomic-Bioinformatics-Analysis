@@ -3,6 +3,7 @@
 
 This pipeline processes metagenomic sequencing data, starting from raw reads to functional annotation. Key steps include quality control, assembly, gene prediction, taxonomic profiling, and functional analysis using various bioinformatics tools.
 
+---
 
 ### Main Steps:  
 1. **Download Data**: Retrieve SRA files using `prefetch` and convert to FASTQ with `fastq-dump`.  
